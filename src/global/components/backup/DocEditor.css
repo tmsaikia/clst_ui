@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+New:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Verdana:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Impact:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lucida+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monospace:wght@400&display=swap');
+
+/* Custom styles for ReactQuill */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative; /* Ensure container is a positioning context */
+}
+
+.ql-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.ql-editor {
+  min-height: 400px;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling */
+  flex: 1; /* Allow the editor to grow and take available space */
+  font-family: 'Arial', sans-serif; /* Ensure fallback font */
+}
+
+/* Apply font-family to different elements */
+.ql-editor p,
+.ql-editor span,
+.ql-editor div {
+  font-family: 'Arial', sans-serif; /* Ensure font family is applied */
+}
+
+.ql-align-center {
+  text-align: center !important;
+}
+
+.ql-align-right {
+  text-align: right !important;
+}
+
+.ql-align-justify {
+  text-align: justify !important;
+}
+
+.page-break {
+  display: block;
+  page-break-after: always;
+}
+
+.save-btn {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Added horizontal padding for better appearance */
+  cursor: pointer;
+  border-radius: 5px; /* Added border radius for rounded corners */
+  font-size: 16px; /* Increased font size for better readability */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  position: relative; /* Ensure proper positioning context */
+  z-index: 10; /* Ensure button is above other elements */
+}
+
+.save-btn:hover {
+  background-color: #45a049; /* Darker green for hover effect */
+}
+
+/* Ensure font-family in font picker */
+.ql-toolbar .ql-font {
+  font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.ql-picker.ql-font .ql-picker-label {
+  font-family: Arial, sans-serif; /* Fallback font */
+}

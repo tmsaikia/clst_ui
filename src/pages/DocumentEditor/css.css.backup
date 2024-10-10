@@ -1,0 +1,184 @@
+/* src/pages/DocumentEditor/DocumentEditor.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .fileUploadSection {
+    padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .row {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .preview, .editorWrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .preview {
+    border-right: 1px solid #ddd;
+    height: 100%;
+  }
+  
+  .editorWrapper {
+    height: 100%;
+  }
+  
+  .saveButtonContainer {
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center; /* Center the button */
+  }
+  
+  .saveBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: Add border radius for better appearance */
+    font-size: 16px; /* Optional: Adjust font size for better visibility */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #####################################3 with updated 
+  /* src/pages/DocumentEditor/DocumentEditor.module.css */
+
+/* Loinamakta sijinnaba yaba */
+h1{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(19, 2, 168, 0.205); /* Light yellow transparent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+  }
+  
+  .fileUploadSection {
+    background-color: rgba(255, 255, 255, 0.342); /* White with transparency */
+    padding: 3rem;
+    border: 2px solid #8d8d8d;
+    border-radius: 15px; /* Curved corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    align-items: center;
+  }
+
+  .fileloufam {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .fileUploadSection h1 {
+    padding: 0 0 2rem 0;
+  }
+
+
+  .uploadToufam {
+    height: 300px;           /* Adjust the height as needed */
+    width: 100%;             /* Full width for the container */
+    border-radius: var(--border-radius); /* Same border-radius as input */
+    align-content: center;
+  }
+
+  
+
+  .row {
+    display: flex;
+    height: 80vh;
+    flex: row;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .preview, .editorWrapper {
+    background-color: #ddd;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin: 1rem 0;
+  }
+  
+  .preview {
+    border-right: 1px solid #ddd;
+    height: 100%;
+  }
+  
+  .editorWrapper {
+    height: 100%;
+  }
+  
+  .saveButtonContainer {
+    display: flex;
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center; /* Center the button */
+    justify-content: center;
+  }
+  
+  .saveBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: Add border radius for better appearance */
+    font-size: 16px; /* Optional: Adjust font size for better visibility */
+  }
+
+  .show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+  

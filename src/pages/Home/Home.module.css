@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #4B3869;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --border-radius: 15px;
+  --input-border-radius: 25px;
+  --button-color: #4B3869;
+  --button-hover-color: #3a2c50;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-duration: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.search-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  transition: all var(--transition-duration);
+}
+
+.search-panel h1 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 2em;
+  transition: color var(--transition-duration);
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all var(--transition-duration);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: var(--input-border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: all var(--transition-duration);
+  overflow: hidden;
+  border: none;
+}
+
+.search-icon {
+  margin-left: 10px;
+  height: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: none; /* Removed the border */
+  border-radius: var(--input-border-radius) 0 0 var(--input-border-radius);
+  font-size: 16px;
+  outline: none;
+  flex: 1;
+  min-width: 0; /* Ensure input shrinks correctly */
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: var(--input-border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color var(--transition-duration);
+}
+
+.search-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.results-panel {
+  width: 100%;
+  max-width: 1000px;
+  transition: all var(--transition-duration);
+}
+
+.result-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  transition: all var(--transition-duration);
+}
+
+.result-item h4 {
+  color: var(--primary-color);
+  margin: 0 0 10px;
+  transition: color var(--transition-duration);
+}
+
+.result-item p {
+  margin: 0 0 10px;
+  transition: all var(--transition-duration);
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  transition: all var(--transition-duration);
+}
+
+.details-button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color var(--transition-duration);
+}
+
+.details-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.full-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-duration) ease-out;
+}
+
+.result-item.details-open .full-text {
+  max-height: 500px; /* or some other appropriate value */
+  overflow-y: auto;
+}
+
+.result-item.details-open {
+  transition: all var(--transition-duration);
+}
